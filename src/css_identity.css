@@ -1,0 +1,27 @@
+
+/* Identidade do esperanto: índice branco com faixa verde, a bandeira como marca, caneta framboesa, estrela dourada */
+.brand .flag{display:block;width:44px;height:29px;margin-bottom:10px;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.brand b{font-size:25px}
+.nav{box-shadow:inset 4px 0 0 var(--blu)}
+.navlink .bar i{background:var(--brass)}
+.nav .rhythm.met{border-color:var(--brass);background:color-mix(in srgb,var(--brass) 14%,var(--card))}
+.topbar .brand{display:flex;align-items:center;gap:10px}
+.topbar .brand .flag{width:30px;height:20px;margin:0}
+.hero h1 em{color:var(--blu);font-weight:500}
+.lv .units a.full{border-color:var(--blu)}
+.examcta{border-color:var(--brass)}
+/* tabelvortoj */
+.tbx th{text-align:center;vertical-align:middle;line-height:1.2}
+.tbx th small{font-weight:400;letter-spacing:0;font-size:11px}
+.tbx td{text-align:center;cursor:pointer;padding:8px 6px;transition:background .15s}
+.tbx td:hover{background:var(--blu-soft)}
+.tbx td b{display:block;font-family:var(--f-read);font-size:17px;color:var(--blu)}
+.tbx td small{display:block;color:var(--muted);font-family:var(--f-ui);font-size:11.5px;line-height:1.25;margin-top:2px}
+.tbx td.hl{background:var(--ambra-soft)}
+/* vortfarado */
+.afx{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-bottom:18px}
+.afx .card{margin:0;padding:14px 16px;display:grid;gap:4px}
+.afx b{font-family:var(--f-display);font-size:24px;color:var(--blu);line-height:1}
+.morf{font-family:var(--f-read);font-size:18px;letter-spacing:.04em;color:var(--muted);margin-top:8px}
+.drill input#vin,.drill input#tbin,.drill input#vfin{font-family:var(--f-read);font-size:24px;text-align:center;width:min(100%,360px);border:0;border-bottom:2px dashed var(--blu);background:transparent;color:var(--blu);padding:6px}
+.drill input#vin:focus,.drill input#tbin:focus,.drill input#vfin:focus{outline:none;background:var(--blu-soft)}

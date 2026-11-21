@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="eo"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kajero de Esperanto</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Caveat:wght@500;700&family=Libre+Franklin:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<style>
+/* Layout: caderno de pontos (dot grid) — índice branco à esquerda com a «bandeira» (verde, quadrado branco, estrela) como marca; página à direita; correções em caneta framboesa; detalhes dourados da estrela. Fraunces nos títulos, Newsreader na leitura. */
+:root{
+  --paper:#F2F6F0; --grid:#C9D8C7; --card:#FFFFFF; --ink:#122018; --muted:#536257; --line:#D3DFD2;
+  --blu:#0B6B3A; --blu-soft:#DDEFE3; --rosso:#B3245B; --rosso-soft:#FAE3EC; --verde:#1C7A4A; --verde-soft:#DDF0E3;
+  --side:#0B5A31; --side-hi:#13723F; --side-ink:#F1F7F2; --side-muted:#AFCBB9; --brass:#D9A520;
+  --ambra:#8F6400; --ambra-soft:#FAF0D6; --shadow:0 1px 2px rgba(18,32,24,.06),0 6px 24px -12px rgba(18,32,24,.2);
+  --f-display:'Fraunces','Iowan Old Style',Georgia,serif;
+  --f-read:'Newsreader','Iowan Old Style',Georgia,serif;
+  --f-ui:'Libre Franklin',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-pen:'Caveat','Bradley Hand','Segoe Print',cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D1310; --grid:#1E2A22; --card:#142019; --ink:#E5EDE7; --muted:#97A99D; --line:#26372C;
+  --blu:#6FD49A; --blu-soft:#163525; --rosso:#FF86AE; --rosso-soft:#3A1826; --verde:#5ACB92; --verde-soft:#14301F;
+  --side:#0A1F14; --side-hi:#1A3F2A; --side-ink:#E5EDE7; --side-muted:#8FAA99; --brass:#E9BE4E;
+  --ambra:#E7B95A; --ambra-soft:#33290F; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px -14px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D1310; --grid:#1E2A22; --card:#142019; --ink:#E5EDE7; --muted:#97A99D; --line:#26372C;
+  --blu:#6FD49A; --blu-soft:#163525; --rosso:#FF86AE; --rosso-soft:#3A1826; --verde:#5ACB92; --verde-soft:#14301F;
+  --side:#0A1F14; --side-hi:#1A3F2A; --side-ink:#E5EDE7; --side-muted:#8FAA99; --brass:#E9BE4E;
+  --ambra:#E7B95A; --ambra-soft:#33290F; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px -14px rgba(0,0,0,.6); color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{background-color:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15.5px;line-height:1.55;
+  background-image:radial-gradient(var(--grid) 1.1px,transparent 1.3px);
+  background-size:22px 22px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--card)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--blu);outline-offset:2px;border-radius:4px}
+a{color:var(--blu)}
+i,em{font-style:italic}
+
+.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+.nav{position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--card);border-right:1px solid var(--line);
+  padding-block:22px 28px;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:18px;display:flex;flex-direction:column;gap:18px}
+.brand{display:block;text-decoration:none;color:var(--ink)}
+.brand b{display:block;font-family:var(--f-display);font-style:italic;font-weight:600;font-size:30px;line-height:1;letter-spacing:-.01em}
