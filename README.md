@@ -15,6 +15,8 @@
 
 Open `index.html` in a browser. Progress is saved in the browser's `localStorage`.
 
+Online version (GitHub Pages): https://proglarissa.github.io/esperantolsm/. To add it to a phone's home screen, open that address and choose «Adicionar à tela de início»; the green Esperanto star (`icons/`) appears as the icon.
+
 AI correction, writing-based conversation and text generation only work when the page is opened as an artifact inside Claude, because they use `window.claude`. Everything else works in any browser.
 
 ## How to rebuild it
@@ -34,3 +36,4 @@ python3 src/assemble.py   # writes index.html at the repository root
 | `src/eo_engine_*.js`, `eo_rad_engine.js`, `eo_gen_engine.js` | the page engine |
 | `src/patch_noaudio.py` | text-only adaptation and the new pages (applied by `assemble.py`) |
 | `src/*.css`, `eo_head.html`, `skel.html` | layout |
+| `icons/`, `manifest.webmanifest` | home-screen icon and favicon |
